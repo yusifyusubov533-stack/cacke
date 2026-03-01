@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mel lamore | Cake Shop</title>
+<link rel="icon" href="https://logo-icons.com/cdn/shop/files/854-logo-1713227106.763color-E63946.svg?v=1713361420&width=416">
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+<a href="#" class="logo" onclick="goHome(); closeMenu();">Mel Lamore</a>
+<nav>
+<ul class="nav-links" id="navMenu">
+<li><a href="#" onclick="goHome(); closeMenu();">მთავარი</a></li>
+<li><a href="#products" onclick="closeMenu()">კოლექცია</a></li>
+<li><a href="#about" onclick="closeMenu()">ჩვენს შესახებ</a></li>
+</ul>
+</nav>
+
+<div class="burger" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</header>
+
+<div id="mainContent">
+<section class="hero">
+<div>
+<h1>Mel Lamore</h1>
+</div>
+</section>
+
+<div class="wrapper" id="products">
+<aside class="sidebar">
+<h3>კატეგორია</h3>
+<label class="filter-item"><input type="checkbox" value="შოკოლადი" class="cat"> შოკოლადი</label>
+<label class="filter-item"><input type="checkbox" value="ხილის" class="cat"> ხილის</label>
+<label class="filter-item"><input type="checkbox" value="საქორწილო" class="cat"> საქორწილო</label>
+<label class="filter-item"><input type="checkbox" value="sale" class="cat"> % ფასდაკლება</label>
+</aside>
+<main class="grid" id="productGrid"></main>
+</div>
+
+<section class="about" id="about">
+<div class="about-container">
+<img src="https://assets-us-01.kc-usercontent.com/9e9a95c0-1d15-00d5-e878-50f070203f13/c6096f80-3077-46d5-824a-9588838d4c6a/the-mandarin-cake-shop-slider-2.jpg" class="about-img">
+<div class="about-text">
+<h2>ჩვენი ისტორია</h2>
+<p>Sincerity Luxury დაარსდა 2012 წელს. ჩვენ ვქმნით პრემიუმ დესერტებს ევროპული სტანდარტებით და უმაღლესი ხარისხის ინგრედიენტებით.</p>
+</div>
+</div>
+</section>
+</div>
+
+<div id="productPage" class="hidden product-page"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
